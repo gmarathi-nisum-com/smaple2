@@ -1,0 +1,85 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CitizenChoice</title>
+    <link rel="icon" href="/images/logo123.ico" type="image/x-icon"/>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Import Bootstrap CSS from CDN for easy replacement/removal -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <!-- Import bundled/compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="/app.css">
+        
+ <link rel="stylesheet" type="text/css" href="/circle.css">
+ <link rel="stylesheet" type="text/css" href="/custom.css">
+
+    
+  <link rel="stylesheet" type="text/css" href="/cropper.css">
+ 
+    <style>
+    
+html, body {
+    min-height: 100%;
+    margin:0;
+   padding:0;
+   background: #eaeaea none;
+}
+
+
+#app{
+    min-width: 300px; /* 100px x3 = 300 */
+    min-height:100%;
+
+}
+    </style>
+  </head>
+  <body>
+    <div id="app" class="wrapper">
+      
+    </div>
+  </body>
+
+  
+
+  <!-- Import bundled JavaScript -->
+  <script src="/bundle.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+    //Tool tip enabler
+    $('[data-toggle="tooltip"]').tooltip(); 
+
+    //scroll bar collapse  background color change
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() >= 1) {
+            $('.navbar').addClass('compressed');
+        } else {
+            $('.navbar').removeClass('compressed');
+        }
+    });
+
+});  
+
+
+
+  </script>
+
+  <script src="css/jquery/jquery.min.js"></script>
+  <script src="css/jquery/jquery-migrate.min.js"></script>
+  <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="css/easing/easing.min.js"></script>
+  <script src="css/superfish/hoverIntent.js"></script>
+  <script src="css/superfish/superfish.min.js"></script>
+  <script src="css/wow/wow.min.js"></script>
+  <script src="css/owlcarousel/owl.carousel.min.js"></script>
+  <script src="css/magnific-popup/magnific-popup.min.js"></script>
+  <script src="css/sticky/sticky.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <script src="js/main.js"></script>
+</html>
